@@ -1,7 +1,7 @@
-##Laravel-Projekt "RetroGame-Topseller"
+# Laravel-Projekt "RetroGame-Topseller"
 
-#Projektvorstellung
+## Projektvorstellung
 
-#Tagebuch
+## Entwicklungstagebuch
 
-#Probleme
+## Probleme
