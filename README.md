@@ -3,5 +3,5 @@
 ## Projektvorstellung
 
 ## Entwicklungstagebuch
-
-## Probleme
+Cancel changes
+## Herausforderungen
