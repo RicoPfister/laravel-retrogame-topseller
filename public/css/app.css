@@ -10271,3 +10271,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  background: #e1ae41;
+}
+body h2, body .h2 {
+  margin-left: 10px;
+}
