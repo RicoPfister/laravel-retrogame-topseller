@@ -101,3 +101,85 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.banner2Part1 {
+  position: relative;
+  background-image: -webkit-linear-gradient(#378DBC 0%, #B6E8F1 46%, #ffffff 50%, #32120E 54%, #FFC488 58%, #582C11 90%, #EC9B4E 100%);
+  background-size: 1500px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 4px black;
+  font-size: 200px;
+  font-family: "Titillium Web", sans-serif;
+  font-style: italic;
+  line-height: 0.65;
+  background-repeat: no-repeat;
+}
+
+.banner2Part1:before {
+  content: "RetroGames";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+  background-position: -800px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 0;
+  padding-right: 300px;
+  -webkit-animation-name: banner2Part1_effect;
+  animation-name: banner2Part1_effect;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.banner2Part2 {
+  position: absolute;
+  margin: 0px;
+  font-family: "Mr Dafoe", cursive;
+  font-size: 160px;
+  color: #378dbc;
+  transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg); /* IE 9 */
+  -webkit-transform: rotate(-5deg); /* Safari and banner2Part1 */
+  margin-left: 600px;
+  margin-top: -85px;
+  -webkit-text-stroke: 1px #378dbc;
+  filter: drop-shadow(2px 2px 20px #378dbc);
+  z-index: 20;
+}
+
+.windows .banner2Part2 {
+  -webkit-text-stroke: 4px #378dbc;
+}
+
+@-webkit-keyframes banner2Part1_effect {
+  0% {
+    background-position: -680px 0;
+  }
+  10% {
+    background-position: 580px 0;
+  }
+  100% {
+    background-position: 580px 0;
+  }
+}
+@keyframes banner2Part1_effect {
+  0% {
+    background-position: -680px 0;
+  }
+  10% {
+    background-position: 580px 0;
+  }
+  100% {
+    background-position: 580px 0;
+  }
+}
