@@ -3,26 +3,29 @@
 @import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:900);
 
+body { background: #000; color: #fff; margin: 0; position: relative;}
+
 .bannerPart1 {
   position: relative;
-  background-image: -webkit-linear-gradient(#378DBC 0%, #B6E8F1 46%, #ffffff 50%, #32120E 54%, #FFC488 58%, #582C11 90%, #EC9B4E 100%);
-//   background-position: 50px 50px;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 4px #f5f5f5;
-  font-size: 200px;
-  font-family: 'Titillium Web', sans-serif;
-  font-style: italic;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
+//   background-image: -webkit-linear-gradient(#378DBC 0%, #B6E8F1 46%, #ffffff 50%, #32120E 54%, #FFC488 58%, #582C11 90%, #EC9B4E 100%);
+background-image: url('/../img/cover_collage.png');
+background-size: 1500px;
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke: 4px black;
+font-size: 200px;
+font-family: 'Titillium Web', sans-serif;
+font-style: italic;
+line-height: 0.65;
+background-repeat: no-repeat;
 }
 
 .bannerPart1:before {
   content: 'RetroGames';
   position: absolute;
   left: 0;
+  top: 0;
   z-index: 10;
   background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
   background-position:-800px;
@@ -50,8 +53,8 @@
   transform:rotate(-5deg);
   -ms-transform:rotate(-5deg); /* IE 9 */
   -webkit-transform:rotate(-5deg); /* Safari and bannerPart1 */
-  margin-left: 650px;
-  margin-top: -50px;
+  margin-left: 600px;
+  margin-top: -85px;
   -webkit-text-stroke: 1px #378dbc;
   -webkit-filter: drop-shadow(2px 2px 20px #378dbc);
   filter: drop-shadow(2px 2px 20px #378dbc);
@@ -63,15 +66,15 @@
 }
 
 @-webkit-keyframes bannerPart1_effect {
-  0% {background-position:-900px 0;}
-  10% {background-position:550px 0;}
-  100% {background-position:550px 0;}
+  0% {background-position:-680px 0;}
+  10% {background-position:580px 0;}
+  100% {background-position:580px 0;}
 }
 
 @keyframes bannerPart1_effect {
-    0% {background-position:-900px 0;}
-    10% {background-position:550px 0;}
-    100% {background-position:550px 0;}
+    0% {background-position:-680px 0;}
+    10% {background-position:580px 0;}
+    100% {background-position:580px 0;}
   }
 
 .logo, .banner{
@@ -81,6 +84,11 @@
 
 .header {
     display: flex;
+}
+
+.headerWrapper, header {
+    margin: 0;
+    padding: 0;
 }
 
 
