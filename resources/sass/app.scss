@@ -7,11 +7,45 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-$primary-color: #e1ae41;
+$primary-color: #ecd4a4;
 
 body {
     background: $primary-color;
-    h2  {
-        margin-left: 10px;
-    }
+    //display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+}
+
+.logo {
+    max-width: 300px;
+}
+
+.input-group {
+    max-width: 300px;
+}
+
+.cover {
+    height: 300px;
+    width: 300px;
+}
+.star-rating {
+    line-height:32px;
+    font-size:1.25em;
+  }
+
+.star-rating .fa-star{color: green;}
+
+#comment {
+    height: 35px;
+    width: 90px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #378dbc;
+    color: white;
+    text-align: center;
 }
