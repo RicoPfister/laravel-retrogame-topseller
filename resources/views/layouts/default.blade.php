@@ -26,11 +26,11 @@
     <button type="button" class="btn btn-primary">Search</button>
   </div>
 
-   <p><br><b>Title:</b></p>
+   <p><br><b>Title: </b>Tetris</p>
 
    <img class="cover" src="{{ asset('/images/2-Tetris.jpg') }}" alt="Tetris">
 
-   <p><br>Rating:</p>
+   <br><br><p><b>User rating:<b> *****</p>
    <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -46,12 +46,12 @@
     </div>
   </div>
 
-   <p><b>Ranking:</b></p>
-   <p><b>Platform:</b></p>
-   <p><b>Developer:</b></p>
-   <p><b>Publisher:</b></p>
-   <p><b>Release Date:</b></p>
-   <p><b>Sales:</b></p>
+   <p><b>Ranking: </b>10</p>
+   <p><b>Platform: </b>Game Boy</p>
+   <p><b>Developer: </b>Nintendo</p>
+   <p><b>Publisher: </b>Nintendo</p>
+   <p><b>Release Date: </b>1986</p>
+   <p><b>Sales: </b>25 millions</p>
 
    <!-- hier wird der Wert von der section "content" eines blade templates ausgefüllt,
    welches dieses layout "extended" -->
