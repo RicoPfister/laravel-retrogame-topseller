@@ -27,8 +27,9 @@ background-repeat: no-repeat;
   left: 0;
   top: 0;
   z-index: 10;
+  height: 150px;
   background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
-  background-position:-800px;
+  background-position:-900px;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-stroke: 0;
@@ -95,10 +96,11 @@ background-repeat: no-repeat;
 // ************************ second banner for testing **************************************
 
 .banner2Part1 {
-  position: relative;
-  background-image: -webkit-linear-gradient(#378DBC 0%, #B6E8F1 46%, #ffffff 50%, #32120E 54%, #FFC488 58%, #582C11 90%, #EC9B4E 100%);
+position: relative;
+background-image: -webkit-linear-gradient(#378DBC 0%, #B6E8F1 46%, #ffffff 50%, #32120E 54%, #FFC488 58%, #582C11 90%, #EC9B4E 100%);
 // background-image: url('/../img/cover_collage.png');
-background-size: 1500px;
+background-size: 1500;
+background-position: 0 2px;
 -webkit-background-clip: text;
 background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -116,8 +118,9 @@ background-repeat: no-repeat;
   left: 0;
   top: 0;
   z-index: 10;
+  height: 150px;
   background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
-  background-position:-800px;
+   background-position:-900px;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-stroke: 0;
@@ -135,7 +138,7 @@ background-repeat: no-repeat;
 
 .banner2Part2 {
   position: absolute;
-  margin: 0px;
+  margin: 0;
   font-family: 'Mr Dafoe', cursive;
   font-size: 160px;
   color: #378dbc;
@@ -165,9 +168,3 @@ background-repeat: no-repeat;
     10% {background-position:580px 0;}
     100% {background-position:580px 0;}
   }
-
-
-
-
-
-
