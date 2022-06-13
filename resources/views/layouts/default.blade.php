@@ -11,7 +11,8 @@
    <!-- hier wird der Wert von der section "title" eines blade templates ausgefüllt,
    welches dieses layout "extended" -->
    <div id="wrapper">
-    <img class="logo" src="{{ asset('/images/newLogo.png') }}" alt="RetroGames">
+    <div class="banner2Part1 banner"></div>
+    <div class="banner2Part2 banner"></div>
     </div>
   </div>
    <title class="title">@yield('title')</title>
