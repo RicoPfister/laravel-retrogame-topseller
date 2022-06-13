@@ -10,96 +10,66 @@
 
    <!-- hier wird der Wert von der section "title" eines blade templates ausgefüllt,
    welches dieses layout "extended" -->
-   <div id="wrapper">
-    <div class="banner2Part1 banner"></div>
-    <div class="banner2Part2 banner"></div>
-    </div>
-  </div>
-   <title class="title">@yield('title')</title>
+
+   {{-- <title class="title">@yield('title')</title> --}}
 </head>
 <body>
    <!-- hier wird auch der Wert von der section "title" eines blade templates ausgefüllt,
    welches dieses layout "extended" -->
-   <h1><a href="/messages">@yield('title')</a></h1>
+   {{-- <h1><a href="/messages">@yield('title')</a></h1> --}}
 
-   <div class="input-group">
-    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-    <button type="button" class="btn btn-primary">Search</button>
-  </div>
+   {{-- main container - all content frame --}}
+   <div class="container-fluid">
 
-   <p><br><b>Title: </b>Tetris</p>
+        <div class="row">
 
-   <img class="cover" src="{{ asset('/images/2-Tetris.jpg') }}" alt="Tetris">
+            <div class="col d-flex justify-content-center">
 
-   <br><br><p><b>User rating:<b> *****</p>
-   <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="star-rating">
-          <span class="fa fa-star-o" data-rating="1"></span>
-          <span class="fa fa-star-o" data-rating="2"></span>
-          <span class="fa fa-star-o" data-rating="3"></span>
-          <span class="fa fa-star-o" data-rating="4"></span>
-          <span class="fa fa-star-o" data-rating="5"></span>
-          <input type="hidden" name="rating-average" class="rating-value" value="4.5">
-        </div>
-      </div>
-    </div>
-  </div>
+                <div class="wrapper">
 
-   <p><b>Ranking: </b>10</p>
-   <p><b>Platform: </b>Game Boy</p>
-   <p><b>Developer: </b>Nintendo</p>
-   <p><b>Publisher: </b>Nintendo</p>
-   <p><b>Release Date: </b>1986</p>
-   <p><b>Sales: </b>25 millions</p>
+                    <div class="banner2Part1 banner">RetroGames</div>
+                    <div class="banner2Part2 banner">TopSeller</div>
 
-   <!-- hier wird der Wert von der section "content" eines blade templates ausgefüllt,
-   welches dieses layout "extended" -->
-   @yield('content')
-   <!-- hier wird die php Funktion date() aufgerufen mit dem Format-Pattern 'd.m.Y'
-    und im html ausgegeben-->
-
-    <section>
-        <div class="container my-7 py-7 text-dark">
-          <div class="row d-flex justify-content-left">
-            <div class="col-md-8 col-lg-8 col-xl-4">
-              <div class="card">
-                <div class="card-body p-2">
-                  <div class="d-flex flex-start w-100">
-                    <img class="star-rating">
-                        <ul class="rating" data-mdb-toggle="rating">
-                        <li>
-                          <i class="far fa-star fa-sm text-primary" title="Bad"></i>
-                        </li>
-                        <li>
-                          <i class="far fa-star fa-sm text-primary" title="Poor"></i>
-                        </li>
-                        <li>
-                          <i class="far fa-star fa-sm text-primary" title="OK"></i>
-                        </li>
-                        <li>
-                          <i class="far fa-star fa-sm text-primary" title="Good"></i>
-                        </li>
-                        <li>
-                          <i class="far fa-star fa-sm text-primary" title="Excellent"></i>
-                        </li>
-                      </ul>
-                      <div class="form-outline">
-                        <textarea class="form-control" id="textAreaExample" rows="3"></textarea>
-                        <label class="form-label" for="textAreaExample"></label>
-                      </div>
-                      <div class="d-flex justify-content-between mt-4">
-                        <button type="button" class="btn btn-primary" id="comment">Comment</button>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
+
             </div>
-          </div>
+
         </div>
-      </section>
+
+        {{-- main row - all content goes in here --}}
+        <div class="row">
+
+            {{-- left invisible column - it helps center the main column --}}
+            <div class="col"></div>
+
+            {{-- main content - detail row --}}
+            <div class="col-3 detail border border-1 border-dark">
+
+w
+
+
+
+            </div>
+
+            {{-- main content - invisible detail/list separator --}}
+            {{-- <div class="col separator"></div> --}}
+
+            {{-- main content - list row --}}
+            <div class="col-3 d-flex border border-1 border-dark">
+
+            r
+afsdfa-flip-horizontalasdf<br>
+asdf<br>
+asdf<br>
+asdfmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm<br>
+
+
+            </div>
+
+            {{-- left invisible column - it helps center the main column --}}
+            <div class="col"></div>
+
+        <div>
 
    <div class="footer"><b>Updated: {{date('d.m.Y')}}</b></div>
 </body>

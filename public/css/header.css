@@ -1,12 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:900);
-body {
-  background: #000;
-  color: #fff;
-  margin: 0;
-  position: relative;
-}
-
 .bannerPart1 {
   position: relative;
   background-image: url("/../img/cover_collage.png");
@@ -94,6 +87,15 @@ body {
   margin-right: 15px;
 }
 
+.wrapper {
+  transform: scale(0.5);
+  margin-bottom: 5rem;
+}
+
+.detail {
+  margin-right: 2rem;
+}
+
 .header {
   display: flex;
 }
@@ -106,7 +108,7 @@ body {
 .banner2Part1 {
   position: relative;
   background-image: -webkit-linear-gradient(#378DBC 0%, #B6E8F1 46%, #ffffff 50%, #32120E 54%, #FFC488 58%, #582C11 90%, #EC9B4E 100%);
-  background-size: 1500;
+  background-size: 1500px;
   background-position: 0 2px;
   -webkit-background-clip: text;
   background-clip: text;
@@ -127,6 +129,7 @@ body {
   z-index: 10;
   height: 150px;
   background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+  background-size: 1500px;
   background-position: -900px;
   -webkit-background-clip: text;
   background-clip: text;
@@ -154,7 +157,7 @@ body {
   -ms-transform: rotate(-5deg); /* IE 9 */
   -webkit-transform: rotate(-5deg); /* Safari and banner2Part1 */
   margin-left: 600px;
-  margin-top: -85px;
+  margin-top: -100px;
   -webkit-text-stroke: 1px #378dbc;
   filter: drop-shadow(2px 2px 20px #378dbc);
   z-index: 20;

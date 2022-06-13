@@ -3,7 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:900);
 
-body { background: #000; color: #fff; margin: 0; position: relative;}
+// body { background: #000; color: #fff; margin: 0; position: relative;}
 
 .bannerPart1 {
   position: relative;
@@ -83,6 +83,23 @@ background-repeat: no-repeat;
     margin-right: 15px;
 }
 
+.wrapper {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+    margin-bottom: 5rem;
+}
+
+// .separator {
+//     width: 20rem;
+// }
+
+.detail {
+    margin-right: 2rem;
+}
+
 .header {
     display: flex;
 }
@@ -99,7 +116,7 @@ background-repeat: no-repeat;
 position: relative;
 background-image: -webkit-linear-gradient(#378DBC 0%, #B6E8F1 46%, #ffffff 50%, #32120E 54%, #FFC488 58%, #582C11 90%, #EC9B4E 100%);
 // background-image: url('/../img/cover_collage.png');
-background-size: 1500;
+background-size: 1500px;
 background-position: 0 2px;
 -webkit-background-clip: text;
 background-clip: text;
@@ -120,7 +137,8 @@ background-repeat: no-repeat;
   z-index: 10;
   height: 150px;
   background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
-   background-position:-900px;
+  background-size: 1500px;
+  background-position:-900px;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-stroke: 0;
@@ -146,7 +164,7 @@ background-repeat: no-repeat;
   -ms-transform:rotate(-5deg); /* IE 9 */
   -webkit-transform:rotate(-5deg); /* Safari and banner2Part1 */
   margin-left: 600px;
-  margin-top: -85px;
+  margin-top: -100px;
   -webkit-text-stroke: 1px #378dbc;
   -webkit-filter: drop-shadow(2px 2px 20px #378dbc);
   filter: drop-shadow(2px 2px 20px #378dbc);
