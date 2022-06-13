@@ -10405,11 +10405,8 @@ body {
 
 .wrapper {
   transform: scale(0.5);
-  margin-bottom: 5rem;
-}
-
-.detail {
-  margin-right: 2rem;
+  margin-bottom: 6rem;
+  margin-top: 3rem;
 }
 
 .header {
@@ -10424,7 +10421,6 @@ body {
 .banner2Part1 {
   position: relative;
   background-image: -webkit-linear-gradient(#378DBC 0%, #B6E8F1 46%, #ffffff 50%, #32120E 54%, #FFC488 58%, #582C11 90%, #EC9B4E 100%);
-  background-size: 1500px;
   background-position: 0 2px;
   -webkit-background-clip: text;
   background-clip: text;
@@ -10434,7 +10430,6 @@ body {
   font-family: "Titillium Web", sans-serif;
   font-style: italic;
   line-height: 0.65;
-  background-repeat: no-repeat;
 }
 
 .banner2Part1:before {
@@ -10473,7 +10468,7 @@ body {
   -ms-transform: rotate(-5deg); /* IE 9 */
   -webkit-transform: rotate(-5deg); /* Safari and banner2Part1 */
   margin-left: 600px;
-  margin-top: -100px;
+  margin-top: -110px;
   -webkit-text-stroke: 1px #378dbc;
   filter: drop-shadow(2px 2px 20px #378dbc);
   z-index: 20;
