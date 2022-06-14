@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:900);
 .bannerPart1 {
   position: relative;
-  background-image: url("/../img/cover_collage.png");
+  background-image: url("/../images/cover_collage.png");
   background-size: 1500px;
   -webkit-background-clip: text;
   background-clip: text;
@@ -82,33 +82,9 @@
     background-position: 580px 0;
   }
 }
-.logo, .banner {
-  height: 150px;
-  margin-right: 15px;
-}
-
-.wrapper {
-  transform: scale(0.5);
-  margin-bottom: 5rem;
-}
-
-.detail {
-  margin-right: 2rem;
-}
-
-.header {
-  display: flex;
-}
-
-.headerWrapper, header {
-  margin: 0;
-  padding: 0;
-}
-
 .banner2Part1 {
   position: relative;
   background-image: -webkit-linear-gradient(#378DBC 0%, #B6E8F1 46%, #ffffff 50%, #32120E 54%, #FFC488 58%, #582C11 90%, #EC9B4E 100%);
-  background-size: 1500px;
   background-position: 0 2px;
   -webkit-background-clip: text;
   background-clip: text;
@@ -118,7 +94,6 @@
   font-family: "Titillium Web", sans-serif;
   font-style: italic;
   line-height: 0.65;
-  background-repeat: no-repeat;
 }
 
 .banner2Part1:before {
@@ -149,7 +124,6 @@
 
 .banner2Part2 {
   position: absolute;
-  margin: 0;
   font-family: "Mr Dafoe", cursive;
   font-size: 160px;
   color: #378dbc;
@@ -157,7 +131,7 @@
   -ms-transform: rotate(-5deg); /* IE 9 */
   -webkit-transform: rotate(-5deg); /* Safari and banner2Part1 */
   margin-left: 600px;
-  margin-top: -100px;
+  margin-top: -110px;
   -webkit-text-stroke: 1px #378dbc;
   filter: drop-shadow(2px 2px 20px #378dbc);
   z-index: 20;
@@ -188,4 +162,18 @@
   100% {
     background-position: 580px 0;
   }
+}
+.logo, .banner {
+  height: 150px;
+  margin-right: 15px;
+}
+
+.wrapper {
+  transform: scale(0.5);
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+}
+
+.header {
+  display: flex;
 }

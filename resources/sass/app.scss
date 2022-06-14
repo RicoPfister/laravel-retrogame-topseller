@@ -7,7 +7,16 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+// other SCSS files [added by ricopfister]
+// @import "header.scss";
+// @import "detail.scss";
+
 $primary-color: #ecd4a4;
+
+// p, h1
+// {
+//    font-size: 16px;
+// }
 
 body {
     background: $primary-color;
@@ -52,5 +61,21 @@ body {
     text-align: center;
 }
 
-// other SCSS files [added by ricopfister]
-@import "header.scss";
+.title {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.titleBig {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.detail, .comment, .search {
+    background: #f5deb3;
+}
+
+
+
+
+
