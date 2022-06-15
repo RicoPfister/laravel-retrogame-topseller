@@ -17,7 +17,7 @@
 <body>
 
    {{-- site container --}}
-   <div class="container-fluid border">
+   <div class="container-fluid">
 
         {{-- site row --}}
         <div class="row">
