@@ -1,4 +1,5 @@
 <link href="{{ asset('/css/detail.css') }}" rel="stylesheet">
+<link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
 
 <div class="col border border-1 border-dark d-flex justify-content-center p-0 m-0">
 
@@ -9,40 +10,41 @@
 
     </div>
 
-    <div class="col py-1 d-flex justify-content-center detail">
+    <div class="col py-3 d-flex justify-content-center detail">
 
         {{-- box-former --}}
         <div>
 
             {{--<h1 class="heading"><b>Tetris</b></h1> --}}
 
-            <div class="title">Title:</div>
-            <h1 class="titleBig"><b>Tetris</b></h1>
+            {{-- <div class="title">Title:</div> --}}
+            <h1 class="titleBig"><b>{{$collection[0]['Game']}}</b></h1>
 
             <img class="cover" src="{{ asset('/images/2-Tetris.jpg') }}" alt="Tetris">
 
-            <br><br><div><b>User rating:</b> *****</div>
+            <br><br>
 
-                    <div class="col-lg-12">
-                        <div class="star-rating">
-                            <span class="fa fa-star-o" data-rating="1"></span>
-                            <span class="fa fa-star-o" data-rating="2"></span>
-                            <span class="fa fa-star-o" data-rating="3"></span>
-                            <span class="fa fa-star-o" data-rating="4"></span>
-                            <span class="fa fa-star-o" data-rating="5"></span>
-                            <input type="hidden" name="rating-average" class="rating-value" value="4.5">
-                        </div>
-                    </div>
+            <div class="d-flex justify-content-start">
+                <div class="pe-4">
+                    <div><b>User rating:</b></div>
+                    <div><b>Ranking:</b>&nbsp;<img class="infoIcon" src="{{ asset('/images/infoIcon.png') }}" alt="Info Icon" ata-bs-toggle="tooltip" data-bs-placement="top" title="Source : Wikipedia. World wide ranking from 15.06.2022"></div>
+                    <div><b>Platform:</b></div>
+                    <div><b>Developer:</b></div>
+                    <div><b>Publisher:</b></div>
+                    <div><b>Release Date:</b></div>
+                    <div><b>Sales:</b></div>
+                </div>
 
-
-            <div><b>Ranking: </b>10</div>
-            <div><b>divlatform: </b>Game Boy</div>
-            <div><b>Develodiver: </b>Nintendo</div>
-            <div><b>divublisher: </b>Nintendo</div>
-            <div><b>Release Date: </b>1986</div>
-            <div><b>Sales: </b>25 millions</div>
-            <br>
-            <div><b>[write comment module] </b></div>
+                <div>
+                    <div id="userRating">no data</div>
+                    <div id="ranking">{{$collection[0]['Ranking']}}</div>
+                    <div id="platform">{{$collection[0]['Platform']}}</div>
+                    <div id="developer">{{$collection[0]['Developer']}}</div>
+                    <div id="publisher">{{$collection[0]['Publisher']}}</div>
+                    <div id="release">{{$collection[0]['ReleaseDate']}}</div>
+                    <div id="sales">{{$collection[0]['Sales']}}</div>
+                </div>
+            </div>
 
             <!-- hier wird der Wert von der section "content" eines blade templates ausgefüllt,
             welches dieses layout "extended" -->
@@ -61,3 +63,5 @@
     </div>
 
 </div>
+
+<link rel="stylesheet" href="{{ asset('js/misc.js') }}" />

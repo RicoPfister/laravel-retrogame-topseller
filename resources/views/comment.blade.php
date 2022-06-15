@@ -4,6 +4,8 @@
 
         <h1><b>Comments</b></h1>
         <div><b>[show comments module]</b></div>
+        <br>
+        <div><b>[write comment module] </b></div>
 
     </div>
 
