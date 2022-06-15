@@ -40,9 +40,9 @@
                      </div>
                 </div>
 
-                {{-- detail moduele --}}
+                {{-- search box --}}
                 <div class="row">
-                    {{-- detail module --}}
+                    {{-- search module --}}
                     @include('search')
                 </div>
 

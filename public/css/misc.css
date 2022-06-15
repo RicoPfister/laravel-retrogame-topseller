@@ -1,3 +1,7 @@
+.buttonColor {
+  background: #e9c988;
+}
+
 .infoIcon {
   height: 16px;
 }
@@ -8,4 +12,18 @@
 
 .searchField {
   width: 100%;
+}
+
+.title {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.titleBig {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.detail, .comment, .search {
+  background: #f5deb3;
 }

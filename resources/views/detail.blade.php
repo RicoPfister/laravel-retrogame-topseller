@@ -4,9 +4,10 @@
 <div class="col border border-1 border-dark d-flex justify-content-center p-0 m-0">
 
     {{-- left entry button --}}
-    <div style="height: 100%" class="col-1 border-end border-dark d-flex justify-content-center align-items-center">
+    <div style="height: 100%" class="col-1 border-end border-dark d-flex justify-content-center align-items-center d-grid">
 
-        <img class="buttonArrow" src="{{ asset('/images/buttonLeft.png') }}" alt="Previous entry">
+        <button type="button" class="btn buttonColor h-100"><</button>
+        {{-- <img class="buttonArrow" src="{{ asset('/images/buttonLeft.png') }}" alt="Previous entry"> --}}
 
     </div>
 
@@ -21,7 +22,7 @@
 
             {{-- print_r({{$collection}}); --}}
 
-            <h1 class="titleBig"><b>{{$collection['Game']}}</b></h1>
+            <h5 class="titleBig"><b>{{$collection['Game']}}</b></h5>
 
             <img class="cover" src="{{ asset('/images/2-Tetris.jpg') }}" alt="Tetris">
 
@@ -59,9 +60,10 @@
     </div>
 
     {{-- right entry button --}}
-    <div style="height: 100%" class="col-1 border-start border-dark d-flex justify-content-center align-items-center">
+    <div style="height: 100%" class="col-1 border-start border-dark d-flex justify-content-center align-items-center d-grid">
 
-        <img class="buttonArrow" src="{{ asset('/images/buttonRight.png') }}" alt="Previous entry">
+        <button type="button" class="btn buttonColor h-100">></button>
+        {{-- <img class="buttonArrow" src="{{ asset('/images/buttonRight.png') }}" alt="Previous entry"> --}}
 
     </div>
 

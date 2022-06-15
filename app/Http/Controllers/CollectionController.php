@@ -7,14 +7,17 @@ use App\Models\Collection;
 
 class CollectionController extends Controller
 {
-    public function gameIndex() {
+    public function gameIndexRand(Request $request) {
 
     // gets all the entries from table messages
     // and gets an array of objects as a return value.
     // we store this return value in the variable $messages
 
-    // $gameIndex = Collection::all()->sortByDesc('created_at');
-    $gameIndex = Collection::all()->random();
+    $gameIndex = Collection::all()->sortByDesc('created_at');
+    $request->session()->put('entry',1);
+    $entry = $request->session()->get('entry');
+
+    $gameIndex = Collection::find($entry);
 
     // This line would output the messages in the UI/Browser // and stop the script execution.
     // good for debugging ;o)
@@ -26,3 +29,5 @@ class CollectionController extends Controller
     return view('layouts/default', ['collection' => $gameIndex]);
     }
 }
+
+?>
