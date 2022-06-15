@@ -18,7 +18,10 @@
             {{--<h1 class="heading"><b>Tetris</b></h1> --}}
 
             {{-- <div class="title">Title:</div> --}}
-            <h1 class="titleBig"><b>{{$collection[0]['Game']}}</b></h1>
+
+            {{-- print_r({{$collection}}); --}}
+
+            <h1 class="titleBig"><b>{{$collection['Game']}}</b></h1>
 
             <img class="cover" src="{{ asset('/images/2-Tetris.jpg') }}" alt="Tetris">
 
@@ -37,12 +40,12 @@
 
                 <div>
                     <div id="userRating">no data</div>
-                    <div id="ranking">{{$collection[0]['Ranking']}}</div>
-                    <div id="platform">{{$collection[0]['Platform']}}</div>
-                    <div id="developer">{{$collection[0]['Developer']}}</div>
-                    <div id="publisher">{{$collection[0]['Publisher']}}</div>
-                    <div id="release">{{$collection[0]['ReleaseDate']}}</div>
-                    <div id="sales">{{$collection[0]['Sales']}}</div>
+                    <div id="ranking">{{$collection['Ranking']}}</div>
+                    <div id="platform">{{$collection['Platform']}}</div>
+                    <div id="developer">{{$collection['Developer']}}</div>
+                    <div id="publisher">{{$collection['Publisher']}}</div>
+                    <div id="release">{{$collection['ReleaseDate']}}</div>
+                    <div id="sales">{{$collection['Sales']}}</div>
                 </div>
             </div>
 

@@ -13,7 +13,8 @@ class CollectionController extends Controller
     // and gets an array of objects as a return value.
     // we store this return value in the variable $messages
 
-    $gameIndex = Collection::all()->sortByDesc('created_at');
+    // $gameIndex = Collection::all()->sortByDesc('created_at');
+    $gameIndex = Collection::all()->random();
 
     // This line would output the messages in the UI/Browser // and stop the script execution.
     // good for debugging ;o)
