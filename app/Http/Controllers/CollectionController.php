@@ -7,7 +7,7 @@ use App\Models\Collection;
 
 class CollectionController extends Controller
 {
-    public function gameIndexRand(Request $request) {
+    public function gameIndex(Request $request) {
 
     // gets all the entries from table messages
     // and gets an array of objects as a return value.
@@ -29,5 +29,3 @@ class CollectionController extends Controller
     return view('layouts/default', ['collection' => $gameIndex]);
     }
 }
-
-?>
