@@ -19,7 +19,7 @@ use App\Http\Controllers\CollectionController;
 // });
 
 Route::get('/', [CollectionController::class, 'gameIndex']);
-Route::get('/previous', [CollectionController::class, 'gameIndexPrevious']);
-Route::get('/next', [CollectionController::class, 'gameIndexNext']);
+Route::post('/previous', [CollectionController::class, 'gameIndexPrevious']);
+Route::post('/next', [CollectionController::class, 'gameIndexNext']);
 
 

@@ -5,10 +5,10 @@
 
     {{-- left entry button --}}
     <div style="height: 100%" class="col-1 border-end border-dark d-flex justify-content-center align-items-center d-grid">
-
-        <button type="button" class="btn buttonColor h-100" onclick="location.href='previous'"><</button>
-        {{-- <img class="buttonArrow" src="{{ asset('/images/buttonLeft.png') }}" alt="Previous entry"> --}}
-
+        <form action="/previous" method="post">
+                <button type="submit" class="btn buttonColor h-100"><</button>
+                {{-- <img class="buttonArrow" src="{{ asset('/images/buttonLeft.png') }}" alt="Previous entry"> --}}
+        </form>
     </div>
 
     <div class="col py-3 d-flex justify-content-center detail">
@@ -62,7 +62,7 @@
     {{-- right entry button --}}
     <div style="height: 100%" class="col-1 border-start border-dark d-flex justify-content-center align-items-center d-grid">
 
-        <button type="button" class="btn buttonColor h-100">></button>
+        <button type="button" class="btn buttonColor h-100" onclick="location.href='next'">></button>
         {{-- <img class="buttonArrow" src="{{ asset('/images/buttonRight.png') }}" alt="Previous entry"> --}}
 
     </div>
