@@ -56,7 +56,8 @@
                 </div>
 
                 {{-- separator --}}
-                <div class="row mb-3"></div>
+                <div class="row mb-3 d-flex justify-content-end"></div>
+                @include('searchresult')
 
                 {{-- comment moduele --}}
                 <div class="row">
@@ -75,6 +76,7 @@
         </div>
 
     </div>
+
 
     <div class="footer"><b>Updated: {{date('d.m.Y')}}</b></div>
 </body>
