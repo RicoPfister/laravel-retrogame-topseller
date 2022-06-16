@@ -59,7 +59,7 @@
 
                 {{-- separator --}}
                 <div class="row mb-3 d-flex justify-content-end"></div>
-                @include('searchresult')
+                {{-- @include('searchresult') --}}
 
                 {{-- comment moduele --}}
                 <div class="row">
