@@ -1,7 +1,6 @@
 {{-- author: rico --}}
 
-<link href="{{ asset('/css/detail.css') }}" rel="stylesheet">
-<link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
+{{-- <link href="{{ asset('/css/misc.css') }}" rel="stylesheet"> --}}
 
 <div class="text-end m-0 p-0">Add Game</div>
 
