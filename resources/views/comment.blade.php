@@ -1,6 +1,6 @@
 {{-- author: rico --}}
-<link href="{{ asset('/css/rating_search.css') }}" rel="stylesheet">
-<script src="{{ asset('/js/sortresult.js') }}"></script>
+{{-- <link href="{{ asset('/css/rating_search.css') }}" rel="stylesheet">
+<script src="{{ asset('/js/sortresult.js') }}"></script> --}}
 
 </head>
 
@@ -8,8 +8,8 @@
 
     <div>
 
-        <h1><b>Comments</b></h1>
-        {{-- @include('feedback') --}}
+        <h1 class=""><b>Comments</b></h1>
+        @include('feedback')
         <br>
         <div><b>[show comments module] </b></div>
 
