@@ -28,7 +28,7 @@
             <div class="col"></div>
 
             {{-- content box --}}
-            <div class="col-4 mt-5">
+            <div class="col-8 mt-5">
 
                 {{-- header --}}
                 <div class="row">
@@ -52,14 +52,18 @@
                 <div class="row mb-3"></div>
 
                 {{-- detail moduele --}}
-                <div class="row mt-5">
+                <div class="row mt-5 d-flex justify-content-center">
                     {{-- detail module --}}
-                    @include('detail')
+                    <div class="col">
+                        @include('detail')
+                    </div>
+                    <div class="col">
+                        @include('searchresult')
+                    </div>
                 </div>
 
                 {{-- separator --}}
                 <div class="row mb-3 d-flex justify-content-end"></div>
-                {{-- @include('searchresult') --}}
 
                 {{-- comment moduele --}}
                 <div class="row">

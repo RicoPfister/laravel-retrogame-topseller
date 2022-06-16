@@ -1,22 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Game-Index</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link href="{{ asset('/css/rating_search.css') }}" rel="stylesheet">
-  <script src="{{ asset('/js/sortresult.js') }}"></script>
+<link href="{{ asset('/css/rating_search.css') }}" rel="stylesheet">
+<script src="{{ asset('/js/sortresult.js') }}"></script>
 
-</head>
-<body>
-    <div class="container-fluid p-5 text-center">
+    <div class="container-fluid text-center">
     <button type="button" class="btn-close" style="float:right" aria-label="Close"></button>
     <h1>Game-Index</h1><hr>
   </div>
 
-  <table class="container-fluid p-5 text-center" id="glossar">
+  <table class="container-fluid p-5 text-center m-0" id="glossar">
 
     <tr>
       <th>
@@ -78,6 +68,3 @@
   </ul>
 </nav>
 </div>
-
-</body>
-</html>

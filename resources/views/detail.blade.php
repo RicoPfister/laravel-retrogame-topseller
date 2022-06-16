@@ -1,6 +1,6 @@
 {{-- author: rico --}}
 
-{{-- <link href="{{ asset('/css/misc.css') }}" rel="stylesheet"> --}}
+<link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
 
 <div class="text-end m-0 p-0">Add Game</div>
 
@@ -48,7 +48,7 @@
                         </div>
 
                         <div>
-                            <div id="userRating">no data</div>
+                            <div id="userRating">@include('rating')</div>
                             <div id="ranking">{{$collection['Ranking']}}</div>
                             <div id="platform">{{$collection['Platform']}}</div>
                             <div id="developer">{{$collection['Developer']}}</div>
