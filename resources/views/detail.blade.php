@@ -12,6 +12,7 @@
         </form>
     </div>
 
+    {{-- cover/detail box --}}
     <div class="col py-3 d-flex justify-content-center detail">
 
         {{-- box-former --}}

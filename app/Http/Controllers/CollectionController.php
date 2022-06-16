@@ -56,7 +56,7 @@ class CollectionController extends Controller
 
     // $request->flash();
 
-    return view('layouts/default', ['collection' => $gameIndex, ]);
+    return view('layouts/default', ['collection' => $gameIndex]);
     // return back()->with(['collection' => $gameIndex]);
     // return redirect('/')->with(['collection' => $gameIndex]);
     // return back()->withInput();
