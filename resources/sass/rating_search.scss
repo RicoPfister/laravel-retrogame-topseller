@@ -1,58 +1,65 @@
-/* rating: read-only */
-
-.checked {
-    color: green;
+.rating {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-size: 50px;
   }
 
-  /* rating: in comments-field */
-
-  .stars input {
-      position: absolute;
-      left: -999999px;
+  .rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
   }
 
-  .stars a {
-      display: inline-block;
-      padding-right:4px;
-      text-decoration: none;
-      margin:0;
+  .rating label:last-child {
+    position: static;
   }
 
-  .stars a:after {
-      position: relative;
-      font-size: 18px;
-      font-family: 'FontAwesome', serif;
-      display: block;
-      content: "\f005";
-      color: #9e9e9e;
+  .rating label:nth-child(1) {
+    z-index: 5;
   }
 
-  span {
-    font-size: 0;
+  .rating label:nth-child(2) {
+    z-index: 4;
   }
 
-  .stars a:hover ~ a:after{
-    color: #9e9e9e !important;
-  }
-  span.active a.active ~ a:after{
-    color: #9e9e9e;
+  .rating label:nth-child(3) {
+    z-index: 3;
   }
 
-  span:hover a:after{
-    color:green !important;
+  .rating label:nth-child(4) {
+    z-index: 2;
   }
 
-  span.active a:after,
-  .stars a.active:after{
-    color:green;
+  .rating label:nth-child(5) {
+    z-index: 1;
   }
 
-//   /* formatting Game-Index */
-//   .container-fluid, .row, .footer2, .page-link {
-//     background-color: #ecd4a4;
-//   }
+  .rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
 
-  th, td {
-    text-align: left;
-    /*padding: 16px;} Test - Two-Liner -----------------------------*/
+  .rating label .icon {
+    float: left;
+    color: transparent;
+  }
+
+  .rating label:last-child .icon {
+    color: #000;
+  }
+
+  .rating:not(:hover) label input:checked ~ .icon,
+  .rating:hover label:hover input ~ .icon {
+    color: #09f;
+  }
+
+  .rating label input:focus:not(:checked) ~ .icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px #09f;
   }

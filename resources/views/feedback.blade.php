@@ -14,21 +14,46 @@
                 </div>
                 <div class="d-flex flex-start w-100">
 
-                    <p class="stars">
-                        <span>
-                          <a class="star-1" id="stars" href="#" value="1">1</a>
-                          <a class="star-2" id="stars" href="#" value="2">2</a>
-                          <a class="star-3" id="stars" href="#" value="3">3</a>
-                          <a class="star-4" id="stars" href="#" value="4">4</a>
-                          <a class="star-5" id="stars" href="#" value="5">5</a>
-                        </span>
-                    </p>
+                    <div>
+                        <form class="rating">
+                            <label>
+                              <input type="radio" name="stars" value="1" />
+                              <span class="icon">★</span>
+                            </label>
+                            <label>
+                              <input type="radio" name="stars" value="2" />
+                              <span class="icon">★</span>
+                              <span class="icon">★</span>
+                            </label>
+                            <label>
+                              <input type="radio" name="stars" value="3" />
+                              <span class="icon">★</span>
+                              <span class="icon">★</span>
+                              <span class="icon">★</span>
+                            </label>
+                            <label>
+                              <input type="radio" name="stars" value="4" />
+                              <span class="icon">★</span>
+                              <span class="icon">★</span>
+                              <span class="icon">★</span>
+                              <span class="icon">★</span>
+                            </label>
+                            <label>
+                              <input type="radio" name="stars" value="5" />
+                              <span class="icon">★</span>
+                              <span class="icon">★</span>
+                              <span class="icon">★</span>
+                              <span class="icon">★</span>
+                              <span class="icon">★</span>
+                            </label>
+                          </form>
+                    </div>
                     <div class="form-outline">
                         <textarea class="form-control" id="textArea" rows="3" placeholder="Comment:"></textarea>
                         <label class="form-label" for="textArea"><br></label>
                     </div>
                         <div class="position-absolute bottom-0 end-0">
-                        <button type="button" class="btn btn-primary" id="comment">Share</button>
+                        <button type="submit" class="btn btn-primary" id="comment">Share</button>
                         </div>
 
 
