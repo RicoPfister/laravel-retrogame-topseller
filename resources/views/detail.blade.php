@@ -26,7 +26,7 @@
         {{-- cover/detail section --}}
         <div class="row">
 
-            <div class="col d-flex justify-content-center border">
+            <div class="col d-flex justify-content-center">
 
                 <div>
 
