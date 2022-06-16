@@ -3,6 +3,8 @@
 <link href="{{ asset('/css/detail.css') }}" rel="stylesheet">
 <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
 
+<div class="text-end m-0 p-0">Add Game</div>
+
 <div class="col border border-1 border-dark d-flex justify-content-center p-0 m-0">
 
     {{-- left entry button --}}

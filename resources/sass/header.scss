@@ -5,10 +5,6 @@
 @import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:900);
 
-.header {
-  height: 50px;
-}
-
 // body { background: #000; color: #fff; margin: 0; position: relative;}
 
 .bannerPart1 {
@@ -136,7 +132,7 @@ margin: -1rem;
   transform:rotate(-5deg);
   -ms-transform:rotate(-5deg); /* IE 9 */
   -webkit-transform:rotate(-5deg); /* Safari and banner2Part1 */
-  margin-left: 600px;
+  margin-left: 650px;
   margin-top: -110px;
   -webkit-text-stroke: 1px #378dbc;
   -webkit-filter: drop-shadow(2px 2px 20px #378dbc);
@@ -180,10 +176,5 @@ margin: -1rem;
 // }
 
 .header {
-    display: flex;
-}
-
-// .headerWrapper, header {
-//     margin: 0;
-//     padding: 0;
-// }
+    height: 100px;
+  }

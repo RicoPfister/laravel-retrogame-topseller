@@ -131,7 +131,7 @@
   transform: rotate(-5deg);
   -ms-transform: rotate(-5deg); /* IE 9 */
   -webkit-transform: rotate(-5deg); /* Safari and banner2Part1 */
-  margin-left: 700px;
+  margin-left: 650px;
   margin-top: -110px;
   -webkit-text-stroke: 1px #378dbc;
   filter: drop-shadow(2px 2px 20px #378dbc);
@@ -176,5 +176,5 @@
 }
 
 .header {
-  display: flex;
+  height: 100px;
 }

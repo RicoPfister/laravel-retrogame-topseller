@@ -5,7 +5,7 @@
 <div class="col py-1">
 
     {{-- box-former --}}
-    <div class="d-flex align-items-center justify-content-between m-0 p-0">
+    <div class="d-flex align-items-end justify-content-between m-0 p-0">
 
         {{-- search section --}}
         <div class="searchField">
@@ -23,7 +23,6 @@
                     <div>&nbsp;|&nbsp;</div>
                     <div>Register</div>
                 </div>
-                <div class="text-end">Add Game</div>
             </div>
 
         </div>

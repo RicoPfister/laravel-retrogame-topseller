@@ -28,11 +28,11 @@
             <div class="col"></div>
 
             {{-- content box --}}
-            <div class="col-4">
+            <div class="col-4 mt-5">
 
                 {{-- header --}}
                 <div class="row">
-                    <div class="col d-flex justify-content-center header border">
+                    <div class="col d-flex justify-content-center header">
 
                         {{-- box-former --}}
                         <div class="wrapper">
@@ -52,7 +52,7 @@
                 <div class="row mb-3"></div>
 
                 {{-- detail moduele --}}
-                <div class="row">
+                <div class="row mt-5">
                     {{-- detail module --}}
                     @include('detail')
                 </div>
