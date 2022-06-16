@@ -1,6 +1,8 @@
+{{-- author: rico --}}
+
 <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
 
-<div class="col search border border-1 border-dark py-1">
+<div class="col py-1">
 
     {{-- box-former --}}
     <div class="d-flex align-items-center justify-content-between m-0 p-0">

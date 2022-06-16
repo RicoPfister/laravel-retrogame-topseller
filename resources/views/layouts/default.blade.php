@@ -1,3 +1,5 @@
+{{-- author: beni, rico --}}
+
 <!DOCTYPE html>
 <html lang="en"><head>
    <meta charset="UTF-8">
@@ -30,7 +32,7 @@
 
                 {{-- header --}}
                 <div class="row">
-                    <div class="col d-flex justify-content-center">
+                    <div class="col d-flex justify-content-center header border">
 
                         {{-- box-former --}}
                         <div class="wrapper">
