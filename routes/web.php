@@ -18,8 +18,12 @@ use App\Http\Controllers\CollectionController;
 //     return view('layouts/default');
 // });
 
+// Route::get('/home', function () {
+//     return view('layouts/default');
+// });
+
 Route::get('/', [CollectionController::class, 'gameIndex']);
-Route::post('/previous', [CollectionController::class, 'gameIndexPrevious']);
-Route::post('/next', [CollectionController::class, 'gameIndexNext']);
+Route::get('/previous', [CollectionController::class, 'gameIndexPrevious']);
+Route::get('/next', [CollectionController::class, 'gameIndexNext']);
 
 

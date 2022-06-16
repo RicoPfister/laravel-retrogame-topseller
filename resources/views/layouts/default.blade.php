@@ -26,7 +26,7 @@
             <div class="col"></div>
 
             {{-- content box --}}
-            <div class="col-3">
+            <div class="col-4">
 
                 {{-- header --}}
                 <div class="row">
