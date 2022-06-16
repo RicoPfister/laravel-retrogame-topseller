@@ -26,7 +26,7 @@
         {{-- cover/detail section --}}
         <div class="row">
 
-            <div class="col d-flex justify-content-center  border border-5">
+            <div class="col d-flex justify-content-center">
 
                 <div>
 
@@ -37,7 +37,6 @@
                         <img class="cover" src="{{ asset('/images/nocover.png')}}">
                     @endif
 
-                    {{-- detail title/value box --}}
                     <div class="d-flex justify-content-start mt-2">
                         <div class="pe-4">
                             <div><b>User rating:</b></div>
@@ -84,3 +83,4 @@
 </div>
 
 <link rel="stylesheet" href="{{ asset('js/misc.js') }}" />
+

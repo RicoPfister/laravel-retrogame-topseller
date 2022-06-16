@@ -1,6 +1,10 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/misc.js": "/js/misc.js",
+    "/js/rating.js": "/js/rating.js",
+    "/js/sortresult.js": "/js/sortresult.js",
+    "/css/header.css": "/css/header.css",
     "/css/app.css": "/css/app.css",
+    "/css/rating_search.css": "/css/rating_search.css",
     "/css/misc.css": "/css/misc.css"
 }
