@@ -5,9 +5,9 @@
     <div>
 
         <h1><b>Comments</b></h1>
-        <div><b>[show comments module]</b></div>
+        @include('feedback')
         <br>
-        <div><b>[write comment module] </b></div>
+        <div><b>[show comments module] </b></div>
 
     </div>
 
