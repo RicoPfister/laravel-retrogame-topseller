@@ -13,7 +13,10 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
 mix.js('resources/js/misc.js', 'public/js')
+mix.js('resources/js/rating.js', 'public/js')
+mix.js('resources/js/sortresult.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .sass('resources/sass/misc.scss', 'public/css')
     .sass('resources/sass/header.scss', 'public/css')
+    .sass('resources/sass/rating_search.scss', 'public/css')
     .sourceMaps();

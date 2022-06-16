@@ -1,0 +1,57 @@
+/* rating: read-only */
+
+.checked {
+    color: green;
+  }
+
+  /* rating: in comments-field */
+
+  .stars input {
+      position: absolute;
+      left: -999999px;
+  }
+
+  .stars a {
+      display: inline-block;
+      padding-right:4px;
+      text-decoration: none;
+      margin:0;
+  }
+
+  .stars a:after {
+      position: relative;
+      font-size: 18px;
+      font-family: 'FontAwesome', serif;
+      display: block;
+      content: "\f005";
+      color: #9e9e9e;
+  }
+
+  span {
+    font-size: 0;
+  }
+
+  .stars a:hover ~ a:after{
+    color: #9e9e9e !important;
+  }
+  span.active a.active ~ a:after{
+    color: #9e9e9e;
+  }
+
+  span:hover a:after{
+    color:green !important;
+  }
+
+  span.active a:after,
+  .stars a.active:after{
+    color:green;
+  }
+
+  /* formatting Game-Index */
+  .container-fluid, .row, .footer2, .page-link {
+    background-color: #ecd4a4;
+  }
+  th, td {
+    text-align: left;
+    /*padding: 16px;} Test - Two-Liner -----------------------------*/
+  }
