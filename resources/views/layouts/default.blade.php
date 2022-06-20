@@ -64,7 +64,7 @@
 
                     {{-- index module --}}
                     <div class="col">
-                        {{-- @include('searchresult') --}}
+                        @include('searchresult')
                     </div>
                 </div>
 
