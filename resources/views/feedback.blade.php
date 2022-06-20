@@ -11,7 +11,7 @@
                         <label class="form-label m-0 p-0" for="nickname">Nickname:<br></label>
                             <input class="form-control" id="nickname" name="nickname" placeholder="Nickname">
 
-                            </div>  <label class="form-label m-0 p-0 mt-3" for="stars">Game rating:<br></label>
+                            </div>  <label class="form-label m-0 p-0 mt-3" for="stars">Game rating (optional):<br></label>
                             <div class="">
 
                                 <div>

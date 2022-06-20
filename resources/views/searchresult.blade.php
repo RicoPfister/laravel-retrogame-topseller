@@ -54,3 +54,9 @@
   </table>
 
   {{ $collectionIndex->links() }}
+
+    <div>
+    @if ($misc['search'] === 1)
+        <span>Search result: {{ $collectionIndex->total() }}. <span>
+    @endif
+    <span>From total entries: {{ $misc['searchTotal'] }}</span></div>

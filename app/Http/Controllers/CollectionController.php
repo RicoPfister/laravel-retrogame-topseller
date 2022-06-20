@@ -28,7 +28,7 @@ class CollectionController extends Controller
                 $request->session()->forget('next');
         }
 
-        // do this if an database entry was created/updated
+        // do this if a comment was created/updated
         elseif ($request->session()->has('newComment')){
                 $entry = $request->session()->get('entry');
                 $databaseDetail = Collection::find($entry);
@@ -43,17 +43,46 @@ class CollectionController extends Controller
 
         // load comments
         $comments = Comment::where('GameID', $request->session()->get('entry'))->get();
-        $entry = $request->session()->get('entry');
-        $misc['RatingAvg'] = $comments->avg('Rating');
+
+        $misc['RatingAvg'] = $comments->where('Rating', '>', 0)->avg('Rating');
 
         // get 10 database entries
         $databaseIndex = Collection::paginate(10);
 
-        // get searchResult
-        $searchResult = $request->session()->get('searchResult');
+        // search name; platform; release date
+        if ($request->session()->get('searchcat') === 'Game' OR $request->session()->get('searchcat') === 'Platform' OR $request->session()->get('searchcat') === 'ReleaseDate') {
+
+            $searchString = $request->session()->get('searchstring');
+            $searchCat = $request->session()->get('searchcat');
+
+            $databaseIndex = Collection::where($searchCat, 'LIKE', '%'.$searchString.'%')->paginate(10);
+
+            $misc['search'] = 1;
+
+            $request->session()->forget('searchstring');
+            $request->session()->forget('searchcat');
+          }
+
+          // search sales
+          elseif ($request->session()->get('searchcat') === 'Sales') {
+
+            $searchString = $request->session()->get('searchstring');
+            $searchCat = $request->session()->get('searchcat');
+
+            $databaseIndex = Collection::where($searchCat, '>=', intval($searchString))->paginate(10);
+
+            $misc['search'] = 1;
+
+            $request->session()->forget('searchstring');
+            $request->session()->forget('searchcat');
+          }
+
+          else {$misc['search'] = 0;}
+
+          $misc['searchTotal'] = Collection::count();
 
         // open default blade and pass arrays
-        return view('layouts/default', ['collectionDetail' => $databaseDetail, 'collectionIndex' => $databaseIndex, 'comments' => $comments, 'misc' => $misc, 'searchResult' => $searchResult]);
+        return view('layouts/default', ['collectionDetail' => $databaseDetail, 'collectionIndex' => $databaseIndex, 'comments' => $comments, 'misc' => $misc]);
     }
 
         public function gameIndexPrevious(Request $request) {
@@ -128,23 +157,23 @@ class CollectionController extends Controller
             ]);
 
             // we create a new Message-Object
-            $message = new Comment();
+            $comment = new Comment();
             // we set the properties title and content
             // with the values that we got in the post-request
-            $message->Nickname = $request->nickname;
-            $message->GameID = $request->session()->get('entry');
+            $comment->Nickname = $request->nickname;
+            $comment->GameID = $request->session()->get('entry');
 
             if (!isset($request->stars))
-                $message->Rating = 0;
-            else $message->Rating = $request->stars;
+                $comment->Rating = 0;
+            else $comment->Rating = $request->stars;
 
-            $message->Comment = $request->comment;
+            $comment->Comment = $request->comment;
 
             $request->session()->put('newComment',1);
 
             // we save the new Message-Object in the messages
             // table in our database
-            $message->save();
+            $comment->save();
 
             // at the end we make a redirect to the url /messages
             return redirect('/');

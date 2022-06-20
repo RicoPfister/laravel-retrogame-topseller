@@ -11,11 +11,11 @@ class SearchController extends Controller
     public function searchName(Request $request) {
 
         $searchString = $request->searchstring;
-
-        $searchResult = Collection::where('Game', 'LIKE', '%'.$searchString.'%')->get()->sortByDesc('Sales');
+        $searchCat = $request->searchcat;
 
         // save data in session
-        $request->session()->put('searchResult',$searchResult);
+        $request->session()->put('searchstring',$searchString);
+        $request->session()->put('searchcat',$searchCat);
 
         // open default blade and pass arrays
         // return view('layouts/default', ['searchResult' => $searchResult]);
