@@ -20,7 +20,9 @@
 </head>
 <body>
 
-
+    @if (isset($searchResult))
+        <pre> {{ print_r($searchResult) }} </pre>
+    @endif
 
    {{-- site container --}}
    <div class="container-fluid">
@@ -32,7 +34,7 @@
             <div class="col"></div>
 
             {{-- content box --}}
-            <div class="col-8 mt-5">
+            <div class="col-9 mt-5">
 
                 {{-- header --}}
                 <div class="row">

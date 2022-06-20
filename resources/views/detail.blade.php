@@ -1,8 +1,5 @@
-{{-- author: rico --}}
-
+<link href="{{ asset('/css/detail.css') }}" rel="stylesheet">
 <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
-
-<div class="text-end m-0 p-0">Add Game</div>
 
 <div class="col border border-1 border-dark d-flex justify-content-center p-0 m-0">
 
@@ -14,57 +11,48 @@
         </form>
     </div>
 
-    {{-- cover/detail box --}}
-    <div class="col py-3 detail">
+    <div class="col py-3 d-flex justify-content-center detail">
 
-        {{-- title section --}}
-        <div class="row">
-            <h3 class="titleBig text-center"><b>{{$collection['Game']}}</b></h3>
-        </div>
+        {{-- box-former --}}
+        <div>
 
-        {{-- cover/detail section --}}
-        <div class="row">
+            {{--<h1 class="heading"><b>Tetris</b></h1> --}}
 
-            <div class="col d-flex justify-content-center">
+            {{-- <div class="title">Title:</div> --}}
+            <h1 class="titleBig"><b>{{$collectionDetail['Game']}}</b></h1>
+
+            <img class="cover" src="{{ asset('/images/2-Tetris.jpg') }}" alt="Tetris">
+
+            <br><br>
+
+            <div class="d-flex justify-content-start">
+                <div class="pe-4">
+                    <div><b>User rating:</b></div>
+                    <div><b>Ranking:</b>&nbsp;<img class="infoIcon" src="{{ asset('/images/infoIcon.png') }}" alt="Info Icon" ata-bs-toggle="tooltip" data-bs-placement="top" title="Source : Wikipedia. World wide ranking from 15.06.2022"></div>
+                    <div><b>Platform:</b></div>
+                    <div><b>Developer:</b></div>
+                    <div><b>Publisher:</b></div>
+                    <div><b>Release Date:</b></div>
+                    <div><b>Sales:</b></div>
+                </div>
 
                 <div>
-
-                    {{-- show game cover or default cover --}}
-                    @if ($collection['Covers'] != null)
-                        <img class="cover" src="{{ asset('/images/'.$collection['Covers'].'')}}">
-                    @else
-                        <img class="cover" src="{{ asset('/images/nocover.png')}}">
-                    @endif
-
-                    <div class="d-flex justify-content-start mt-2">
-                        <div class="pe-4">
-                            <div class="detailView"><b>User rating:</b></div>
-                            <div class="detailView"><b>Ranking:</b>&nbsp;<img class="infoIcon" src="{{ asset('/images/infoIcon.png') }}" alt="Info Icon" ata-bs-toggle="tooltip" data-bs-placement="top" title="Worldwide ranking. Source: Wikipedia from 15.06.2022"></div>
-                            <div class="detailView"><b>Platform:</b></div>
-                            <div class="detailView"><b>Developer:</b></div>
-                            <div class="detailView"><b>Publisher:</b></div>
-                            <div class="detailView"><b>Release Date:</b></div>
-                            <div class="detailView"><b>Sales:</b>&nbsp;<img class="infoIcon" src="{{ asset('/images/infoIcon.png') }}" alt="Info Icon" ata-bs-toggle="tooltip" data-bs-placement="top" title="Worldwide sales. Source: Wikipedia from 15.06.2022"></div>
-                        </div>
-
-                        <div>
-                            <div id="userRating" class="d-flex align-items-center">@include('ratingTotal')</div>
-                            <div id="ranking">{{$collection['Ranking']}}</div>
-                            <div id="platform">{{$collection['Platform']}}</div>
-                            <div id="developer">{{$collection['Developer']}}</div>
-                            <div id="publisher">{{$collection['Publisher']}}</div>
-                            <div id="release">{{$collection['ReleaseDate']}}</div>
-                            <div id="sales">{{ number_format($collection['Sales'], 0, '.', '\'')}}</div>
-                        </div>
-                    </div>
-
-                    <!-- hier wird der Wert von der section "content" eines blade templates ausgefüllt,
-                    welches dieses layout "extended" -->
-                    @yield('content')
-                    <!-- hier wird die php Funktion date() aufgerufen mit dem Format-Pattern 'd.m.Y'
-                    und im html ausgegeben-->
+                    <div id="userRating">no data</div>
+                    <div id="ranking">{{$collectionDetail['Ranking']}}</div>
+                    <div id="platform">{{$collectionDetail['Platform']}}</div>
+                    <div id="developer">{{$collectionDetail['Developer']}}</div>
+                    <div id="publisher">{{$collectionDetail['Publisher']}}</div>
+                    <div id="release">{{$collectionDetail['ReleaseDate']}}</div>
+                    <div id="sales">{{$collectionDetail['Sales']}}</div>
                 </div>
             </div>
+
+            <!-- hier wird der Wert von der section "content" eines blade templates ausgefüllt,
+            welches dieses layout "extended" -->
+            @yield('content')
+            <!-- hier wird die php Funktion date() aufgerufen mit dem Format-Pattern 'd.m.Y'
+            und im html ausgegeben-->
+
         </div>
     </div>
 
@@ -82,4 +70,3 @@
 </div>
 
 <link rel="stylesheet" href="{{ asset('js/misc.js') }}" />
-

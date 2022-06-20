@@ -17,28 +17,28 @@ class CollectionController extends Controller
         // do this if the 'previous buttons' was pressed
         if ($request->session()->has('previous')){
             $entry = $request->session()->get('entry');
-            $gameIndex = Collection::find($entry);
+            $databaseDetail = Collection::find($entry);
             $request->session()->forget('previous');
         }
 
         // do this if the 'next buttons' was pressed
         elseif ($request->session()->has('next')){
                 $entry = $request->session()->get('entry');
-                $gameIndex = Collection::find($entry);
+                $databaseDetail = Collection::find($entry);
                 $request->session()->forget('next');
         }
 
         // do this if an database entry was created/updated
         elseif ($request->session()->has('newComment')){
                 $entry = $request->session()->get('entry');
-                $gameIndex = Collection::find($entry);
+                $databaseDetail = Collection::find($entry);
                 $request->session()->forget('newComment');
         }
 
         // do this as default
         else {
-        $gameIndex = Collection::all()->random();
-        $request->session()->put('entry',$gameIndex['id']);
+        $databaseDetail = Collection::all()->random();
+        $request->session()->put('entry',$databaseDetail['id']);
         }
 
         // load comments
@@ -46,9 +46,15 @@ class CollectionController extends Controller
         $entry = $request->session()->get('entry');
         $misc['RatingAvg'] = $comments->avg('Rating');
 
+        // get 10 database entries
+        $databaseIndex = Collection::paginate(10);
+
+        // get searchResult
+        $searchResult = $request->session()->get('searchResult');
+
         // open default blade and pass arrays
-        return view('layouts/default', ['collection' => $gameIndex, 'comments' => $comments, 'misc' => $misc]);
-        }
+        return view('layouts/default', ['collectionDetail' => $databaseDetail, 'collectionIndex' => $databaseIndex, 'comments' => $comments, 'misc' => $misc, 'searchResult' => $searchResult]);
+    }
 
         public function gameIndexPrevious(Request $request) {
 
@@ -80,7 +86,7 @@ class CollectionController extends Controller
 
         return redirect('/');
         // return view('layouts/default', ['collection' => $gameIndex]);
-        }
+    }
 
         public function gameIndexNext(Request $request) {
 
@@ -111,7 +117,7 @@ class CollectionController extends Controller
 
         // return view('layouts/default', ['collection' => $gameIndex]);
         return redirect('/');
-        }
+    }
 
         public function newComment(Request $request) {
 
@@ -142,5 +148,14 @@ class CollectionController extends Controller
 
             // at the end we make a redirect to the url /messages
             return redirect('/');
+        }
+
+        public function searchName(Request $request) {
+
+            $searchResult = Collection::where('Game', 'LIKE', 'Tetris');
+
+            // open default blade and pass arrays
+            return view('layouts/default', ['searchResult' => $searchResult]);
+
         }
 }

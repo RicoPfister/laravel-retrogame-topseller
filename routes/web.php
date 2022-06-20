@@ -4,6 +4,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CollectionController;
+use App\Http\Controllers\SearchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +30,8 @@ Route::get('/previous', [CollectionController::class, 'gameIndexPrevious']);
 Route::get('/next', [CollectionController::class, 'gameIndexNext']);
 
 Route::get('/new-comment', [CollectionController::class, 'newComment']);
+
+Route::get('/search', [SearchController::class, 'searchName']);
 
 
 
