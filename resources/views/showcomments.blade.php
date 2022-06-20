@@ -32,6 +32,6 @@
 
 @else
     <h3 class="text-center m-0 p-0">No comments</h3><br>
-    <div class="text-center m-0 p-0">Be the first to comment and rate!<div>
+    <div class="text-center m-0 p-0">Be the first to comment and rate the game!</div>
 @endif
 

@@ -72,7 +72,7 @@
                 <div class="row mb-3 d-flex justify-content-end"></div>
 
                 {{-- comment moduele --}}
-                <div class="row">
+                <div class="row d-flex justify-content-center">
                     {{-- comment module --}}
                     @include('comment')
                 </div>
