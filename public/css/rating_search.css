@@ -1,9 +1,9 @@
 .rating {
   display: inline-block;
   position: relative;
-  height: 50px;
-  line-height: 50px;
-  font-size: 50px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 30px;
 }
 
 .rating label {
@@ -51,7 +51,7 @@
 }
 
 .rating label:last-child .icon {
-  color: #000;
+  color: lightgrey;
 }
 
 .rating:not(:hover) label input:checked ~ .icon,

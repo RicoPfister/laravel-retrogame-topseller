@@ -27,3 +27,7 @@
 .detail, .comment, .search {
   background: #f5deb3;
 }
+
+.warning {
+  color: crimson;
+}

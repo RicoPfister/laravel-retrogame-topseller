@@ -28,4 +28,8 @@ Route::get('/', [CollectionController::class, 'gameIndex']);
 Route::get('/previous', [CollectionController::class, 'gameIndexPrevious']);
 Route::get('/next', [CollectionController::class, 'gameIndexNext']);
 
+Route::get('/new-comment', [CollectionController::class, 'newComment']);
+
+
+
 

@@ -1,5 +1,7 @@
 {{-- author: beni, rico --}}
 
+</form>
+
 <!DOCTYPE html>
 <html lang="en"><head>
    <meta charset="UTF-8">
@@ -17,6 +19,8 @@
    {{-- <title class="title">@yield('title')</title> --}}
 </head>
 <body>
+
+
 
    {{-- site container --}}
    <div class="container-fluid">
@@ -46,19 +50,21 @@
                 <div class="row">
                     {{-- search module --}}
                     @include('search')
+
                 </div>
 
                 {{-- separator --}}
                 <div class="row mb-3"></div>
 
-                {{-- detail moduele --}}
                 <div class="row mt-5 d-flex justify-content-center">
                     {{-- detail module --}}
                     <div class="col">
                         @include('detail')
                     </div>
+
+                    {{-- index module --}}
                     <div class="col">
-                        @include('searchresult')
+                        {{-- @include('searchresult') --}}
                     </div>
                 </div>
 
