@@ -8,10 +8,10 @@
 <div class="col border border-1 border-dark d-flex justify-content-center p-0 m-0">
 
     {{-- left entry button --}}
-    <div style="height: 100%" class="col-1 border-end border-dark d-flex justify-content-center align-items-center d-grid">
+    <div class="col-1 border-end border-dark d-flex justify-content-center align-items-center d-grid h-100">
         <form action="/previous" method="get">
             {{-- @csrf --}}
-                <button type="submit" class="btn buttonColor h-100" name="previous" value="1"><</button>
+            <button type="submit" class="btn buttonColor h-100" name="previous" value="1"><</button>
         </form>
     </div>
 
@@ -41,7 +41,7 @@
                     <div><b>Platform:</b></div>
                     <div><b>Developer:</b></div>
                     <div><b>Publisher:</b></div>
-                    <div><b>Release Date:</b></div>
+                    <div><b>Sales:</b>&nbsp;<img class="infoIcon" src="{{ asset('/images/infoIcon.png') }}" alt="Info Icon" ata-bs-toggle="tooltip" data-bs-placement="top" title="Worldwide sales. Source: Wikipedia from 15.06.2022"></div>
                     <div><b>Sales:</b></div>
                 </div>
 
@@ -52,7 +52,7 @@
                     <div id="developer">{{$collectionDetail['Developer']}}</div>
                     <div id="publisher">{{$collectionDetail['Publisher']}}</div>
                     <div id="release">{{$collectionDetail['ReleaseDate']}}</div>
-                    <div id="sales">{{$collectionDetail['Sales']}}</div>
+                    <div id="sales">{{ number_format($collectionDetail['Sales'], 0, '.', '\'')}}</div>
                 </div>
             </div>
 

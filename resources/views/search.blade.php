@@ -17,7 +17,7 @@
 
                         <div class="col-5 border">
                             <select class="form-select me-2 search2" aria-label="Search category" name="searchcat">
-                                <option value="Game" selected>Name</option>
+                                <option value="Game" selected>Title</option>
                                 <option value="ReleaseDate">Release Date</option>
                                 {{-- <option value="Developer">Developer</option>
                                 <option value="Publisher">Publisher</option> --}}
