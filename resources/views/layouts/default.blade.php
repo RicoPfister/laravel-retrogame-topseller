@@ -62,6 +62,7 @@
                     {{-- detail module --}}
                     <div class="col">
                         @include('detail')
+                        {{-- @include('addGame') --}}
                     </div>
 
                     {{-- index module --}}

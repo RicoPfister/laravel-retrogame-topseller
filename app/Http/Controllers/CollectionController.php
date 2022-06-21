@@ -47,7 +47,7 @@ class CollectionController extends Controller
         $misc['RatingAvg'] = $comments->where('Rating', '>', 0)->avg('Rating');
 
         // get 10 database entries
-        $databaseIndex = Collection::paginate(10);
+        $databaseIndex = Collection::orderByDesc('Sales')->paginate(10);
 
         // search name; platform; release date
         if ($request->session()->get('searchcat') === 'Game' OR $request->session()->get('searchcat') === 'Platform' OR $request->session()->get('searchcat') === 'ReleaseDate') {
@@ -187,4 +187,5 @@ class CollectionController extends Controller
             return view('layouts/default', ['searchResult' => $searchResult]);
 
         }
+
 }

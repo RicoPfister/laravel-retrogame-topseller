@@ -21,7 +21,12 @@
             {{-- <div class="title">Title:</div> --}}
             <h1 class="titleBig"><b>{{$collectionDetail['Game']}}</b></h1>
 
-            <img class="cover" src="{{ asset('/images/2-Tetris.jpg') }}" alt="Tetris">
+            {{-- show game cover or default cover --}}
+            @if ($collectionDetail['Covers'] != null)
+                <img class="cover" src="{{ asset('/'.$collectionDetail['Covers'].'')}}">
+            @else
+                <img class="cover" src="{{ asset('/Cover/nocover.png')}}">
+            @endif
 
             <br><br>
 
