@@ -13,11 +13,11 @@ https://drive.google.com/file/d/1bcYM1G2tCqnYrULuAheRMoxi5lbAgabq/view?usp=shari
 
 ## Entwicklungstagebuch
 
-1) 15./16. Juni 2022: Erstellen des Bootstrap in Laravel, gemäss PenPot-Design:
+A) 15./16. Juni 2022: Erstellen des Bootstrap in Laravel, gemäss PenPot-Design:
 
 https://drive.google.com/file/d/1pBTnHgUcF-o6ZSrjXAgyAbbSFG8vQp2C/view?usp=sharing
 
-2) 20./21. Juni 2022: Funktionalitäten erstellen:
+B) 20./21. Juni 2022: Funktionalitäten erstellen:
 
 Gallerie, Kommentieren, Index aufführen, Suchfunktion, Bild einfügen
 
