@@ -1,3 +1,7 @@
+{{-- author: beni, rico --}}
+
+</form>
+
 <!DOCTYPE html>
 <html lang="en"><head>
    <meta charset="UTF-8">
@@ -7,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/header.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
     <script src="{{ asset('/js/app.js') }}"></script>
 
    <!-- hier wird der Wert von der section "title" eines blade templates ausgefüllt,
@@ -15,6 +20,10 @@
    {{-- <title class="title">@yield('title')</title> --}}
 </head>
 <body>
+
+    @if (isset($searchResult))
+        <pre> {{ print_r($searchResult) }} </pre>
+    @endif
 
    {{-- site container --}}
    <div class="container-fluid">
@@ -26,40 +35,50 @@
             <div class="col"></div>
 
             {{-- content box --}}
-            <div class="col-3">
+            <div class="col-10 mt-5">
 
                 {{-- header --}}
-                <div class="row">
-                    <div class="col d-flex justify-content-center">
-
+                <div class="row d-flex justify-content-center">
+                    <div class="col d-flex justify-content-center header">
                         {{-- box-former --}}
                         <div class="wrapper">
                             <div class="banner2Part1 banner">RetroGames</div>
                             <div class="banner2Part2 banner">TopSeller</div>
                         </div>
-                     </div>
+                    </div>
+                <div class="col-5">
+                    {{-- search box --}}
+                    <div class="row">
+                        {{-- search module --}}
+                        @include('search')
+                    </div>
                 </div>
-
-                {{-- detail moduele --}}
-                <div class="row">
-                    {{-- detail module --}}
-                    @include('search')
-                </div>
-
-                {{-- separator --}}
-                <div class="row mb-3"></div>
-
-                {{-- detail moduele --}}
-                <div class="row">
-                    {{-- detail module --}}
-                    @include('detail')
                 </div>
 
                 {{-- separator --}}
                 <div class="row mb-3"></div>
+
+                <div class="row mt-5 d-flex justify-content-center">
+                    {{-- detail module --}}
+                    <div class="col">
+                        @if (!isset($misc['addgame']))
+                            @include('detail')
+                        @else
+                            @include('addGame')
+                        @endif
+                    </div>
+
+                    {{-- index module --}}
+                    <div class="col">
+                        @include('searchresult')
+                    </div>
+                </div>
+
+                {{-- separator --}}
+                <div class="row mb-3 d-flex justify-content-end"></div>
 
                 {{-- comment moduele --}}
-                <div class="row">
+                <div class="row d-flex justify-content-center">
                     {{-- comment module --}}
                     @include('comment')
                 </div>
@@ -75,6 +94,7 @@
         </div>
 
     </div>
+
 
     <div class="footer"><b>Updated: {{date('d.m.Y')}}</b></div>
 </body>

@@ -1,7 +1,11 @@
 <?php
 
+// author: rico
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CollectionController;
+use App\Http\Controllers\SearchController;
+use App\Http\Controllers\UploadController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +22,19 @@ use App\Http\Controllers\CollectionController;
 //     return view('layouts/default');
 // });
 
+// Route::get('/home', function () {
+//     return view('layouts/default');
+// });
+
 Route::get('/', [CollectionController::class, 'gameIndex']);
+Route::get('previous', [CollectionController::class, 'gameIndexPrevious']);
+Route::get('next', [CollectionController::class, 'gameIndexNext']);
+Route::get('new-comment', [CollectionController::class, 'newComment']);
+Route::get('search', [SearchController::class, 'searchName']);
+Route::post('addgame', [UploadController::class, 'addgame']);
+Route::get('addgame', [CollectionController::class, 'addgame']);
+Route::get('indexEntry/{id}', [CollectionController::class, 'indexEntry']);
+
+
+
 

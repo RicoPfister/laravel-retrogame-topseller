@@ -1,11 +1,17 @@
-<div class="comment border border-1 border-dark d-flex justify-content-center py-4 mb-5">
+{{-- author: rico --}}
+
+<div class="col-4 comment border border-1 border-dark py-4 mb-5">
 
     <div>
 
-        <h1><b>Comments</b></h1>
-        <div><b>[show comments module]</b></div>
-        <br>
-        <div><b>[write comment module] </b></div>
+        <h1 class="text-center"><b>Comments</b></h1>
+        @include('feedback')
+
+    </div>
+
+    <div>
+
+        @include('showcomments')
 
     </div>
 

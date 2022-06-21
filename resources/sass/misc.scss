@@ -1,5 +1,14 @@
+// author: rico
+
+$primaryColor: #ecd4a4;
+$buttonColor: #e9c988;
+
+.buttonColor {
+    background: $buttonColor
+}
+
 .infoIcon {
-    height: 16px;
+    height: 12px;
 }
 
 .buttonArrow {
@@ -9,3 +18,27 @@
 .searchField {
     width: 100%;
 }
+
+.title {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.titleBig {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.detail, .comment, table, tr, th, li, ul, svg {
+    background-color: #f5deb3;
+}
+
+.warning {
+    color: crimson;
+}
+
+tr:hover {background-color: coral;}
+
+// .search2 {
+//     width: 50px;
+// }
