@@ -9,7 +9,7 @@
     <h1>Game-Index</h1><hr>
 </div>
 
-  <table class="container-fluid p-5 text-center m-0" id="glossar">
+  <table class="container-fluid p-5 text-center m-0 " id="glossar">
 
     <tr>
       <th>

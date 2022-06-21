@@ -3,7 +3,7 @@
   <link href="{{ asset('/css/rating_search.css') }}" rel="stylesheet">
   <script src="{{ asset('/js/rating.js') }}"></script>
 
-        <div class="col comment border border-5 border-dark d-flex py-4 mb-5 ">
+        <div class="col comment border border-1 border-dark d-flex py-4 mb-5 ">
           <div class="col-md-4 col-lg-4 col-xl-12">
             <div class="card">
               <div class="card-body p-2">

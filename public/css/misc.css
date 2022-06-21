@@ -24,7 +24,7 @@
   margin-bottom: 10px;
 }
 
-.detail, .comment, .search, table, tr, th, li, ul {
+.detail, .comment, table, tr, th, li, ul, svg {
   background-color: #f5deb3;
 }
 

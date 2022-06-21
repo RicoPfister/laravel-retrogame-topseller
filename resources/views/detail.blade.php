@@ -3,7 +3,7 @@
 <link href="{{ asset('/css/detail.css') }}" rel="stylesheet">
 <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
 
-<div class="d-flex justify-content-end"><a href="addgame">Add Game</a>&nbsp/&nbsp<a href="addcover">Add Cover</a></div>
+<div class="d-flex justify-content-end"><a href="addgame">Add Game</a>&nbsp/&nbspAdd Cover</div>
 
 <div class="col border border-1 border-dark d-flex justify-content-center p-0 m-0">
 

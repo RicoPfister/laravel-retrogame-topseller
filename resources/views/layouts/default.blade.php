@@ -38,22 +38,21 @@
             <div class="col-10 mt-5">
 
                 {{-- header --}}
-                <div class="row">
+                <div class="row d-flex justify-content-center">
                     <div class="col d-flex justify-content-center header">
-
                         {{-- box-former --}}
                         <div class="wrapper">
                             <div class="banner2Part1 banner">RetroGames</div>
                             <div class="banner2Part2 banner">TopSeller</div>
                         </div>
-                     </div>
+                    </div>
+                <div class="col-5">
+                    {{-- search box --}}
+                    <div class="row">
+                        {{-- search module --}}
+                        @include('search')
+                    </div>
                 </div>
-
-                {{-- search box --}}
-                <div class="row">
-                    {{-- search module --}}
-                    @include('search')
-
                 </div>
 
                 {{-- separator --}}
