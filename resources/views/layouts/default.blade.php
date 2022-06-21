@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/header.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
     <script src="{{ asset('/js/app.js') }}"></script>
 
    <!-- hier wird der Wert von der section "title" eines blade templates ausgefüllt,
@@ -61,8 +62,11 @@
                 <div class="row mt-5 d-flex justify-content-center">
                     {{-- detail module --}}
                     <div class="col">
-                        @include('detail')
-                        {{-- @include('addGame') --}}
+                        @if (!isset($misc['addgame']))
+                            @include('detail')
+                        @else
+                            @include('addGame')
+                        @endif
                     </div>
 
                     {{-- index module --}}

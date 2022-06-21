@@ -1,3 +1,5 @@
+{{-- author: beni/rico --}}
+
   <link href="{{ asset('/css/rating_search.css') }}" rel="stylesheet">
   <script src="{{ asset('/js/rating.js') }}"></script>
 

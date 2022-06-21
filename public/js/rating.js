@@ -15,7 +15,7 @@
   \********************************/
 /***/ (() => {
 
-eval("$(':radio').change(function () {\n  console.log('New star rating: ' + this.value);\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyIkIiwiY2hhbmdlIiwiY29uc29sZSIsImxvZyIsInZhbHVlIl0sInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlc291cmNlcy9qcy9yYXRpbmcuanM/NmY2YiJdLCJzb3VyY2VzQ29udGVudCI6WyIkKCc6cmFkaW8nKS5jaGFuZ2UoZnVuY3Rpb24oKSB7XG4gICAgY29uc29sZS5sb2coJ05ldyBzdGFyIHJhdGluZzogJyArIHRoaXMudmFsdWUpO1xuICB9KTtcbiJdLCJtYXBwaW5ncyI6IkFBQUFBLENBQUMsQ0FBQyxRQUFELENBQUQsQ0FBWUMsTUFBWixDQUFtQixZQUFXO0VBQzFCQyxPQUFPLENBQUNDLEdBQVIsQ0FBWSxzQkFBc0IsS0FBS0MsS0FBdkM7QUFDRCxDQUZIIiwiZmlsZSI6Ii4vcmVzb3VyY2VzL2pzL3JhdGluZy5qcy5qcyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/js/rating.js\n");
+eval("// author: beni\n$(':radio').change(function () {\n  console.log('New star rating: ' + this.value);\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyIkIiwiY2hhbmdlIiwiY29uc29sZSIsImxvZyIsInZhbHVlIl0sInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlc291cmNlcy9qcy9yYXRpbmcuanM/NmY2YiJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBhdXRob3I6IGJlbmlcblxuJCgnOnJhZGlvJykuY2hhbmdlKGZ1bmN0aW9uKCkge1xuICAgIGNvbnNvbGUubG9nKCdOZXcgc3RhciByYXRpbmc6ICcgKyB0aGlzLnZhbHVlKTtcbiAgfSk7XG4iXSwibWFwcGluZ3MiOiJBQUFBO0FBRUFBLENBQUMsQ0FBQyxRQUFELENBQUQsQ0FBWUMsTUFBWixDQUFtQixZQUFXO0VBQzFCQyxPQUFPLENBQUNDLEdBQVIsQ0FBWSxzQkFBc0IsS0FBS0MsS0FBdkM7QUFDRCxDQUZIIiwiZmlsZSI6Ii4vcmVzb3VyY2VzL2pzL3JhdGluZy5qcy5qcyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/js/rating.js\n");
 
 /***/ })
 

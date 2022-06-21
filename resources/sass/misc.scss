@@ -29,10 +29,12 @@ $buttonColor: #e9c988;
     margin-bottom: 10px;
 }
 
-.detail, .comment, .search {
-    background: #f5deb3;
+.detail, .comment, .search, table, tr, th, li, ul {
+    background-color: #f5deb3;
 }
 
 .warning {
     color: crimson;
 }
+
+tr:hover {background-color: coral;}

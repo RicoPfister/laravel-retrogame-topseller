@@ -1,3 +1,5 @@
+// author: beni/rico
+
 // sort-table function in Game-Index:
 function sortTable() {
     let table, rows, switching, i, x, y, shouldSwitch;

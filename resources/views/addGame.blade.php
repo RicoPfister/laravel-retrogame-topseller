@@ -1,3 +1,5 @@
+{{-- author: rico --}}
+
 <link href="{{ asset('/css/detail.css') }}" rel="stylesheet">
 <link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
 

@@ -1,3 +1,5 @@
+{{-- author: rico --}}
+
 {{-- show default message if no comments were found --}}
 @if (count($comments)>0)
 

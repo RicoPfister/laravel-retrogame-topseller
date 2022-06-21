@@ -1,3 +1,6 @@
+{{-- author: beni --}}
+
+<link href="{{ asset('/css/misc.css') }}" rel="stylesheet">
 <link href="{{ asset('/css/rating_search.css') }}" rel="stylesheet">
 <script src="{{ asset('/js/sortresult.js') }}"></script>
 
@@ -26,7 +29,7 @@
           <b> Title<br></b></svg>
         </button>
             @foreach ($collectionIndex as $entry)
-            <li class="list-group-item">{{ $entry->Game }}</li>
+            <li class="list-group-item"><a href="indexEntry/{{$entry->id}}">{{ $entry->Game }}</a></li>
             @endforeach
       </th>
       <th>

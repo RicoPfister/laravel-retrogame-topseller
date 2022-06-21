@@ -23,16 +23,23 @@ class CollectionController extends Controller
 
         // do this if the 'next buttons' was pressed
         elseif ($request->session()->has('next')){
-                $entry = $request->session()->get('entry');
-                $databaseDetail = Collection::find($entry);
-                $request->session()->forget('next');
+            $entry = $request->session()->get('entry');
+            $databaseDetail = Collection::find($entry);
+            $request->session()->forget('next');
         }
 
         // do this if a comment was created/updated
         elseif ($request->session()->has('newComment')){
-                $entry = $request->session()->get('entry');
-                $databaseDetail = Collection::find($entry);
-                $request->session()->forget('newComment');
+            $entry = $request->session()->get('entry');
+            $databaseDetail = Collection::find($entry);
+            $request->session()->forget('newComment');
+        }
+
+        // do this if an index entry is choosed
+        elseif ($request->session()->has('indexEntry')){
+            $entry = $request->session()->get('entry');
+            $databaseDetail = Collection::find($entry);
+            $request->session()->forget('indexEntry');
         }
 
         // do this as default
@@ -80,6 +87,11 @@ class CollectionController extends Controller
           else {$misc['search'] = 0;}
 
           $misc['searchTotal'] = Collection::count();
+
+          if($request->session()->get('addgame') == 1){
+          $misc['addgame'] = $request->session()->get('addgame');
+          $request->session()->forget('addgame');
+          }
 
         // open default blade and pass arrays
         return view('layouts/default', ['collectionDetail' => $databaseDetail, 'collectionIndex' => $databaseIndex, 'comments' => $comments, 'misc' => $misc]);
@@ -188,4 +200,19 @@ class CollectionController extends Controller
 
         }
 
+        public function addgame(Request $request) {
+
+            $request->session()->put('addgame',1);
+
+            return redirect('/');
+        }
+
+        public function indexEntry(Request $request, $id) {
+
+            $request->session()->put('indexEntry',1);
+            $request->session()->put('entry',$id);
+
+            return redirect('/');
+
+        }
 }
